@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flaskDeployment
+  name: flaskdeployment
   namespace: default
 spec:
   replicas: 2
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: flaskapp
-          image: deepak25404/ip-flask:latest
+          image: deepak25404/python-flask:v1
           ports:
             - containerPort: 5000
